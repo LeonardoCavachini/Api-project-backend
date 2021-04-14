@@ -15,14 +15,16 @@ module.exports = {
   test: {
     username: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: 'MarvelDB',
+    database: process.env.DB_NAME,
+    port: process.env.PORT_NUMBER,
     host: process.env.HOSTNAME,
     dialect: 'mysql',
   },
   production: {
     username: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: 'MarvelDB',
+    database: process.env.DB_NAME,
+    port: process.env.PORT_NUMBER,
     host: process.env.HOSTNAME,
     dialect: 'mysql',
   },

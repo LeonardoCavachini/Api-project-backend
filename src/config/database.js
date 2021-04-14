@@ -19,6 +19,9 @@ module.exports = {
     port: process.env.PORT_NUMBER,
     host: process.env.HOSTNAME,
     dialect: 'mysql',
+    define: {
+      timestamps: false,
+    },
   },
   production: {
     username: process.env.MYSQL_USER,
@@ -27,5 +30,8 @@ module.exports = {
     port: process.env.PORT_NUMBER,
     host: process.env.HOSTNAME,
     dialect: 'mysql',
+    define: {
+      timestamps: false,
+    },
   },
 };
